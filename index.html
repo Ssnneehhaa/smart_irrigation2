@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Irrigation System: Agrismart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.jpeg">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to the Smart Irrigation System</h1>
+            <p>Optimize water usage and keep your plants healthy with real-time sensor data and machine learning predictions.</p>
+            <button id="predict-btn">Predict Irrigation Need</button>
+        </div>
+    </section>
+
+    <!-- Sensor Data Display -->
+    <section class="sensor-data">
+        <h2>Current Sensor Data</h2>
+        <div class="sensor-info">
+            <img src="images/background.jpeg">
+            <div class="data-display">
+                <p id="soil-moisture">Soil Moisture: Loading...</p>
+                <p id="temperature">Temperature: Loading...</p>
+                <p id="humidity">Humidity: Loading...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Irrigation Prediction Result -->
+    <section class="irrigation-prediction">
+        <h2>Predicted Irrigation Need</h2>
+        <p id="irrigation-result">Irrigation Prediction: Not available yet</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Smart Irrigation System © 2024</p>
+            <p>Contact us: info@smartirrigation.com</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
